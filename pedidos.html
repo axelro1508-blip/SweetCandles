@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Realizar Pedido</h1>
+        <nav>
+            <a href="index.html">Inicio</a>  
+            <a href="catalogo.html">Catálogo</a>  
+            <a href="Cuidados.html">Cuidados a tener en cuenta</a> 
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Pedidos</h2>
+        <p>Completa el formulario para tu pedido personalizado</p>
+
+        <form action="#" method="post">
+            <h3>Información del Cliente</h3>
+            <div>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            </div>
+
+            <div>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="Ej: 555-1234-5678" required><br><br>
+            </div>
+
+            <h3>Detalles del Pedido</h3>
+            <div>
+                <label for="producto">Producto:</label><br>
+                <select id="producto" name="producto" required>
+                    <option value="">-- Selecciona una vela --</option>
+                    <option value="Cafe Moka">Cafe Moka</option>
+                    <option value="Fruta">Strawberry Patch</option>
+                    <option value="Fruta">State Fair</option>
+                    <option value="Fruta">Fruit loops</option>
+                    <option value="Fruta">sweet orange</option>
+                    <option value="galletas Jengibre">galletas Jengibre</option>
+                    <option value="Fresas con Crema">Fresas con Crema</option>
+                </select><br><br>
+            </div>
+
+            <div>
+                <label for="cantidad">Cantidad:</label><br>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1" required><br><br>
+            </div>
+
+            <div>
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea><br><br>
+            </div>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </main>
+    <p><a href="contacto.html">Contactate con nosotros si lo necestitas →</a></p>
+    <footer>
+        <p>&copy; 2025 sweet candles | Todos los derechos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

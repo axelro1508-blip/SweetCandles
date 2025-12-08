@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <a href="index.html">Inicio</a> 
+            <a href="catalogo.html">Catálogo</a> 
+            <a href="Cuidados.html">Cuidados a tener en cuenta</a>  
+            <a href="pedidos.html">Pedidos</a> 
+        </nav>
+    </header>
+
+    <main>
+        <p style="background-color: #3e4d69; color: white; padding: 10px; text-align: center;">
+            <b>Hora actual del servidor:</b> <?php echo date('H:i:s'); ?> | 
+            <b>Fecha:</b> <?php echo date('d/m/Y'); ?>
+        </p>
+
+        <h2>Información de Contacto</h2>
+        <ul>
+            <li><b>Dirección:</b> Avenida del Canto Nocturno 345 Colonia Mística78901 Ciudad lunar</li>
+            <li><b>Teléfono:</b> +56 810 604 90</li>
+            <li><b>Email:</b> info@sweet candles.com</li>
+            <li><b>Horario:</b> Lunes a Viernes 10:00-18:00 hrs</li>
+        </ul>
+
+        <h2>Envianos mensaje</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="nombre_contacto">Tu nombre:</label><br>
+                <input type="text" id="nombre_contacto" name="nombre_contacto" required><br><br>
+            </div>
+
+            <div>
+                <label for="email_contacto">Tu email:</label><br>
+                <input type="email" id="email_contacto" name="email_contacto" required><br><br>
+            </div>
+
+            <div>
+                <label for="tipo_consulta">Tipo de consulta:</label><br>
+                <select id="tipo_consulta" name="tipo_consulta" required>
+                    <option value="">-- Selecciona --</option>
+                    <option value="informacion">Información general</option>
+                    <option value="mayorista">Ventas al por mayor</option>
+                    <option value="personalizado">Velas personalizadas</option>
+                    <option value="problema">Problema con pedido</option>
+                </select><br><br>
+            </div>
+
+            <div>
+                <label for="mensaje_contacto">Mensaje:</label><br>
+                <textarea id="mensaje_contacto" name="mensaje_contacto" rows="5" required></textarea><br><br>
+            </div>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <h3>Síguenos en redes</h3>
+        <ul>
+            <li><a href="#">Facebook: sweet candles</a></li>
+            <li><a href="#">Instagram: @sweet candles</a></li>
+            <li><a href="#">TikTok: @sweet candles</a></li>
+        </ul>
+    </main>
+
+    <p><a href="index.html">Inicio →</a></p>
+
+    <footer>
+        <p>&copy; 2025 sweet candles | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
