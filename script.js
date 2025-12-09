@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        alert('✅ ¡Pedido validado con éxito! (El formulario no se enviará realmente en este ejemplo).');
+        alert('✅ ¡Pedido validado con éxito!.');
     });
+
 });
