@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        alert('✅ ¡Pedido validado con éxito!.');
+        alert('¡Gracias por ayudarnos a cumplir un suño mas! ❤️.');
     });
 
 });
+
