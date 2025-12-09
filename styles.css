@@ -1,3 +1,8 @@
+/*
+ * Archivo: styles.css
+ * Modificado para hacer el encabezado (header) lo más compacto posible
+ */
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +12,7 @@
 :root{
   --fondo: #fff8f0;        
   --texto: #4a2c2a;        
-  --acento: #ff9a8c;       
+  --acento: #ff9a8c;      
   --nav: #ffd8d0;          
   --footer: #4a2c2a;
   --blanco: #ffffff;
@@ -21,17 +26,21 @@ body{
 }
 
 
+/* --- SECCIÓN HEADER: MÁXIMA COMPACTACIÓN VERTICAL --- */
 header{
   background: var(--nav);
-  padding: 1.5rem 1rem;
+  /* 🛑 REDUCIDO: Padding vertical muy pequeño (0.5rem arriba/abajo) */
+  padding: 0.5rem 1rem; 
   text-align: center;
 }
 header h1{
+  /* Este estilo será sobrescrito por .logo-container h1 */
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 nav{
-  margin-top: 1rem;
+  /* 🛑 REDUCIDO: Margen superior de la navegación */
+  margin-top: 0.5rem; 
 }
 nav a{
   color: var(--texto);
@@ -122,3 +131,30 @@ footer{
   margin-top: 2rem;
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 0.1rem; 
+    padding: 0; 
+}
+
+.logo-container .logo {
+    width: 15px; 
+    height: 15px;
+    border-radius: 0; 
+    box-shadow: none; 
+    margin: 0; 
+}
+
+.logo-container h1 {
+    font-size: 2rem; 
+    margin-bottom: 0.1rem; 
+}
+
+.logo-container p {
+    margin-top: 0;
+    margin-bottom: 0.1rem; 
+    font-size: 0.9rem; 
+}
